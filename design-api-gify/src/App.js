@@ -10,8 +10,24 @@ class App extends Component {
     super();
 
     this.state = {
-      gifs: []
-    }
+      gifs: [],
+      selectedGif: null,
+      modalIsOpen: false
+    };
+  }
+
+  openModal(gif){
+    this.setState({
+      modalIsOpen:true,
+      selectedGif: gif
+    });
+  }
+
+  closeModal(){
+    this.setState({
+      modalIsOpen: false,
+      selectedGif:null
+    })
   }
 
   handleTermChange = (term) => {
