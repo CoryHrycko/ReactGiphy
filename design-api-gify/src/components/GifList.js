@@ -1,13 +1,14 @@
 import React from 'react';
 import GifItem from './GifItem';
-
+// this is a stateless component which means it is
+// flexible in its contents
 const GifList = (props) => {
   const gifItems = props.gifs.map((image) => {
     return <GifItem key={image.id} gif={image} />
   });
 
   return (
-    <ul>{gifItems}</ul>
+    <div className="gif-list">{gifItems}</div>
   );
 };
 

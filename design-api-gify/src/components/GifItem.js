@@ -1,10 +1,10 @@
 import React from 'react';
-
+//this is each individual item in the diagram.
 const GifItem = (image) => {
   return (
-    <li>
-      <img src={image.gif.url} />
-    </li>
+    <div className="gif-item">
+      <img src={image.gif.images.downsized.url} />
+    </div>
   )
 };
 
