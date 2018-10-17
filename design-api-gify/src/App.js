@@ -38,7 +38,7 @@ class App extends Component {
       this.setState({ gifs: res.body.data})
       //console.log(res.body.data[0]);
     });
-    console.log(term);
+    //console.log(term);
   }
   //main render method
   render() {
