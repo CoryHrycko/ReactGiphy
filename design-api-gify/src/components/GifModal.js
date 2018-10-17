@@ -6,22 +6,22 @@ const GifModal =(props) => {
     if(!props.selectedGif){
         return <div></div>;
     }
-    retun(
+    return(
         <Modal
             isOpen={ props.modalIsOpen}
             onRequestClose={ () => props.onRequestClose()}>
             <div className="gif-modal">
-                <img src={ props.selectedGif.images.original.url} />
+                <img alt="please enable Javascript" src={ props.selectedGif.images.original.url} />
                 <p><strong>Source:</strong> <a href= { props.selectedGif.source } >{ props.selectedGif.source}</a></p>
                 <p><strong>Rating:</strong> { props.selectedGif.rating }</p>
 
                 <button onClick={()=> props.onRequestClose()}>Close </button>
             </div>
         </Modal>
-    )
-}
+    );
+};
 
-export default gifModal;
+export default GifModal;
 
 
 

@@ -19,7 +19,7 @@ class App extends Component {
 
   openModal(gif){
     this.setState({
-      modalIsOpen:true,
+      modalIsOpen: true,
       selectedGif: gif
     });
   }
@@ -27,7 +27,7 @@ class App extends Component {
   closeModal(){
     this.setState({
       modalIsOpen: false,
-      selectedGif:null
+      selectedGif: null
     })
   }
 
@@ -48,8 +48,8 @@ class App extends Component {
         <GifList gifs={this.state.gifs} 
                  onGifSelect={selectedGif => this.openModal(selectedGif) }/>
         <GifModal modalIsOpen={this.state.modalIsOpen}
-                  selectedGif={this.state.selectedGif}
-                  OnRequestClose={() => this. closeModal()} />
+                selectedGif={this.state.selectedGif}
+                onRequestClose={ () => this.closeModal()} />
       </div>
     );
   }
