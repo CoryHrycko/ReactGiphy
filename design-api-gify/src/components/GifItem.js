@@ -1,9 +1,9 @@
 import React from 'react';
 //this is each individual item in the diagram.
-const GifItem = (image) => {
+const GifItem = ({gif, onGifSelect}) => {
   return (
-    <div className="gif-item">
-      <img src={image.gif.images.downsized.url} />
+    <div className="gif-item" onClick={() => onGifSelect(gif)}>
+      <img src={gif.images.downsized.url} />
     </div>
   )
 };
