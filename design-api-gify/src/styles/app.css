@@ -40,6 +40,10 @@ input {
     width: 50%;
 }
 
+.search {
+    background: black;
+    padding: 2em;
+}
 
 @media only screen and (min-width: 400px) {
     .gif-list {
