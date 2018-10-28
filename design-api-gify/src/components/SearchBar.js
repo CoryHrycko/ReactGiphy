@@ -14,6 +14,8 @@ class SearchBar extends React.Component {
         return (
             <div className="search">
                 <input placeholder="Search for a Gif in a Giffy!" onChange={event => this.onInputChange(event.target.value)}/>
+                <br></br>
+                <img src="../src/styles/CSS/giphy.png"></img>
             </div>
         );
     }
