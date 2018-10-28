@@ -1,3 +1,12 @@
+This project is an api interfacer with the giphy website were it parses the information given by the api to search for gifs. It uses the react apps state management to show results as you type in letters to completetion. It uses reducers to reduce the array given to single components and then displays each of them into a css grid in which allows for uneven spacing, so they can fill the space as best as possible. When they are clicked on the toggle to full screen with the info of where to get it plugged under as a caption. 
+
+
+
+
+
+
+
+-----------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
